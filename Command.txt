@@ -1,0 +1,3 @@
+python scripts/step2.py --script examples/input/script.txt --person "Albert Einstein" --target 120 --max-candidates 400 --face_ref examples/references/image.png --face-distance-threshold 0.52 --min-clip-score 0.12 --face-ref-fallback --max-ref-fallback 80 --serpapi-key "065871212189a6ccfa75b647690468bcb89d80c699b7da3d0f1a1e981573538f" --serpapi-per-page 100 --serpapi-max-pages 10 --pad-mode crop --debug
+
+python builder/build_video_with_whisperx_clip.py --images_root assets\images --audio examples/input/naration.mp3 --script examples/input/script.txt --use_silence --burn_captions --zoom 1.05 --crossfade 0.5 --output output.mp4
